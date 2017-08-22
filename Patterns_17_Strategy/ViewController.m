@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "Player.h"
+#import "AttackStrategy.h"
+#import "DefenceStrategy.h"
 
 @interface ViewController ()
 
@@ -16,7 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Player *p = [[Player alloc] init];
+    AttackStrategy *a = [[AttackStrategy alloc] init];
+    DefenceStrategy *d = [[DefenceStrategy alloc] init];
+    
+    [p changeStrategy:a];
+    [p makeAction];
+    [p changeStrategy:d];
+    [p makeAction];
 }
 
 

@@ -13,6 +13,10 @@
 		2857140F1F4C0814008B5A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2857140D1F4C0814008B5A4F /* Main.storyboard */; };
 		285714111F4C0814008B5A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285714101F4C0814008B5A4F /* Assets.xcassets */; };
 		285714141F4C0814008B5A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285714121F4C0814008B5A4F /* LaunchScreen.storyboard */; };
+		2857141E1F4C0CD7008B5A4F /* BasicStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2857141D1F4C0CD7008B5A4F /* BasicStrategy.m */; };
+		285714211F4C0D74008B5A4F /* AttackStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 285714201F4C0D74008B5A4F /* AttackStrategy.m */; };
+		285714241F4C0D93008B5A4F /* DefenceStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 285714231F4C0D93008B5A4F /* DefenceStrategy.m */; };
+		285714281F4C1036008B5A4F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 285714271F4C1036008B5A4F /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		285714101F4C0814008B5A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		285714131F4C0814008B5A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		285714151F4C0814008B5A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2857141C1F4C0CD7008B5A4F /* BasicStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicStrategy.h; sourceTree = "<group>"; };
+		2857141D1F4C0CD7008B5A4F /* BasicStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicStrategy.m; sourceTree = "<group>"; };
+		2857141F1F4C0D74008B5A4F /* AttackStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackStrategy.h; sourceTree = "<group>"; };
+		285714201F4C0D74008B5A4F /* AttackStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackStrategy.m; sourceTree = "<group>"; };
+		285714221F4C0D93008B5A4F /* DefenceStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefenceStrategy.h; sourceTree = "<group>"; };
+		285714231F4C0D93008B5A4F /* DefenceStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefenceStrategy.m; sourceTree = "<group>"; };
+		285714261F4C1036008B5A4F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		285714271F4C1036008B5A4F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 		285714031F4C0814008B5A4F /* Patterns_17_Strategy */ = {
 			isa = PBXGroup;
 			children = (
+				285714251F4C1013008B5A4F /* Model */,
+				2857141B1F4C0CA0008B5A4F /* Strategy */,
 				285714071F4C0814008B5A4F /* AppDelegate.h */,
 				285714081F4C0814008B5A4F /* AppDelegate.m */,
 				2857140A1F4C0814008B5A4F /* ViewController.h */,
@@ -77,6 +91,28 @@
 				285714051F4C0814008B5A4F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2857141B1F4C0CA0008B5A4F /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				2857141C1F4C0CD7008B5A4F /* BasicStrategy.h */,
+				2857141D1F4C0CD7008B5A4F /* BasicStrategy.m */,
+				2857141F1F4C0D74008B5A4F /* AttackStrategy.h */,
+				285714201F4C0D74008B5A4F /* AttackStrategy.m */,
+				285714221F4C0D93008B5A4F /* DefenceStrategy.h */,
+				285714231F4C0D93008B5A4F /* DefenceStrategy.m */,
+			);
+			name = Strategy;
+			sourceTree = "<group>";
+		};
+		285714251F4C1013008B5A4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				285714261F4C1036008B5A4F /* Player.h */,
+				285714271F4C1036008B5A4F /* Player.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +190,10 @@
 				2857140C1F4C0814008B5A4F /* ViewController.m in Sources */,
 				285714091F4C0814008B5A4F /* AppDelegate.m in Sources */,
 				285714061F4C0814008B5A4F /* main.m in Sources */,
+				285714211F4C0D74008B5A4F /* AttackStrategy.m in Sources */,
+				2857141E1F4C0CD7008B5A4F /* BasicStrategy.m in Sources */,
+				285714281F4C1036008B5A4F /* Player.m in Sources */,
+				285714241F4C0D93008B5A4F /* DefenceStrategy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
