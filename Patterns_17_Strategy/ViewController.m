@@ -23,7 +23,6 @@
     Player *p = [[Player alloc] init];
     AttackStrategy *a = [[AttackStrategy alloc] init];
     DefenceStrategy *d = [[DefenceStrategy alloc] init];
-    
     [p changeStrategy:a];
     [p makeAction];
     [p changeStrategy:d];
